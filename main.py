@@ -19,13 +19,11 @@ app = FastAPI(
 
 from decouple import config
 
-origins = [
-    "https://smart-course-u4nn.vercel.app",
-]
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["https://smart-course-u4nn.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
