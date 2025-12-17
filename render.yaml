@@ -13,4 +13,8 @@ services:
         value: HS256
       - key: OPENAI_API_KEY
         sync: false
+      - key: CORS_ORIGINS
+        sync: false
+        # Set this to your Vercel frontend URL, e.g., https://smart-course-u4nn.vercel.app
+        # Or use "*" to allow all origins (not recommended for production)
 
