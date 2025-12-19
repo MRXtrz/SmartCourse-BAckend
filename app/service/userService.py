@@ -76,4 +76,5 @@ class UserService:
                 "role": user.role.value
             }
         }
-
+    def get_all_users(self):
+        return self.db.query(User).all()
