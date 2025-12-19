@@ -5,6 +5,7 @@ from app.core.security.hashHelper import verify_password, get_password_hash
 from app.db.models.user import UserRole
 from fastapi import HTTPException, status
 from app.core.security.authHandler import create_access_token
+from app.db.models.user import User
 
 
 class UserService:
