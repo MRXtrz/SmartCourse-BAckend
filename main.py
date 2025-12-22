@@ -23,7 +23,7 @@ from decouple import config
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://smart-course-u4nn-fzjitq4dq-detriots-projects.vercel.app"],
+    allow_origins=["https://smart-course-u4nn.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
